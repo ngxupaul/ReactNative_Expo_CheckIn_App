@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Geo-Checkin",
+    "slug": "geo-checkin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to location to check-in at your current position.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to location to check-in at your current position."
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {},
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to check-in at your current position."
+        }
+      ]
+    ]
+  }
+}
